@@ -5,26 +5,32 @@ from selenium import webdriver
 base_url = "https://www.saucedemo.com/"
 
 # Запускаем браузер Chrome
-driverChrome = webdriver.Chrome()
-
+driver_сhrome = webdriver.Chrome()
 # Открываем сайт в Chrome
-driverChrome.get(base_url)
+driver_сhrome.get(base_url)
 # Устанавливаем размер окна Chrome(такое разрешение у меня на ноуте):
-driverChrome.set_window_size(3200, 2000)
-
-# Запускаем браузер Firefox
-driverFirefox = webdriver.Firefox()
-# Открываем сайт в Firefox
-driverFirefox.get(base_url)
-# Устанавливаем размер окна Firefox
-driverFirefox.set_window_size(3220, 2000)
-
-# Запускаем браузер Edge
-driverEdge = webdriver.Edge()
-# Открываем сайт в Edge
-driverEdge.get(base_url)
-# Устанавливаем размер окна Edge
-driverEdge.set_window_size(3200, 2000)
-
+driver_сhrome.set_window_size(3200, 2000)
 # Останавливаем выполнение программы и ждём
 input("Нажмите Enter для завершения")
+# Закрываем бруезер
+driver_сhrome.close()
+# Запускаем браузер Firefox
+driver_firefox = webdriver.Firefox()
+# Открываем сайт в Firefox
+driver_firefox.get(base_url)
+# Устанавливаем размер окна Firefox
+driver_firefox.set_window_size(3220, 2000)
+# Останавливаем выполнение программы и ждём
+input("Нажмите Enter для завершения")
+# Закрываем бруезер
+driver_firefox.close()
+# Запускаем браузер Edge
+driver_edge = webdriver.Edge()
+# Открываем сайт в Edge
+driver_edge.get(base_url)
+# Устанавливаем размер окна Edge
+driver_edge.set_window_size(3200, 2000)
+# Останавливаем выполнение программы и ждём
+input("Нажмите Enter для завершения")
+# Закрываем бруезер
+driver_edge.close()

@@ -17,3 +17,4 @@ base_url = "https://www.saucedemo.com/"
 driver.get(base_url)
 # Устанавливаем размер окна браузера:
 driver.set_window_size(3200, 2000)
+input("Нажмите Enter для завершения...")
